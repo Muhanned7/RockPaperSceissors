@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        button {
+            padding: 15px 30px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+        #result {
+            font-size: 20px;
+            margin: 20px 0;
+            min-height: 30px;
+        }
+        #scores {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    
+    <div class="buttons">
+        <button onclick="playRound('rock')">✊ Rock</button>
+        <button onclick="playRound('paper')">✋ Paper</button>
+        <button onclick="playRound('scissors')">✌️ Scissors</button>
+    </div>
+
+    <div id="result"></div>
+    <div id="scores">
+        <p>Your Score: <span id="humanScore">0</span></p>
+        <p>Computer Score: <span id="computerScore">0</span></p>
+    </div>
+</body>
+</html>
